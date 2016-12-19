@@ -112,27 +112,15 @@ function barking_dog_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
+    wp_enqueue_script( 'barking_dog_typekit', '//use.typekit.net/siv0zhs.js');
 
 }
 add_action( 'wp_enqueue_scripts', 'barking_dog_scripts' );
 
-/**
- * TypeKit Fonts
-
- <script src="https://use.typekit.net/siv0zhs.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
- *
- * @since Theme 1.0
- */
-function barking_dog_typekit() {
-    wp_enqueue_script( 'barking_dog_typekit', '//use.typekit.net/siv0zhs.js');
-}
-add_action( 'wp_enqueue_scripts', 'barking_dog_typekit' );
-
 function barking_dog_typekit_inline() {
-  if ( wp_script_is( 'barking_dog_typekit', 'done' ) ) { ?>
+    if ( wp_script_is( 'barking_dog_typekit', 'done' ) ) { ?>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
-<?php }
+    <?php }
 }
 add_action( 'wp_head', 'barking_dog_typekit_inline' );
 
