@@ -19,10 +19,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+>>> TABLE OF CONTENTS:,,,
 ----------------------------------------------------------------
 # Normalize
 # Typography
+# Structure
 # Elements
 # Forms
 # Navigation
@@ -54,9 +55,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "typography/typography";
 
 /*--------------------------------------------------------------
+# Structure
+--------------------------------------------------------------*/
+.main-page {
+  @include center-block;
+  max-width: 1140px;
+}
+
+/*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 @import "elements/elements";
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header-area {
+  background-color: $color4;
+}
 
 /*--------------------------------------------------------------
 # Forms

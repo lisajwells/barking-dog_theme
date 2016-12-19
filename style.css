@@ -18,10 +18,11 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+>>> TABLE OF CONTENTS:,,,
 ----------------------------------------------------------------
 # Normalize
 # Typography
+# Structure
 # Elements
 # Forms
 # Navigation
@@ -273,6 +274,15 @@ big {
   font-size: 125%; }
 
 /*--------------------------------------------------------------
+# Structure
+--------------------------------------------------------------*/
+.main-page {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px; }
+
+/*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 html {
@@ -332,6 +342,12 @@ figure {
 table {
   margin: 0 0 1.5em;
   width: 100%; }
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header-area {
+  background-color: #b68f40; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -680,3 +696,5 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/*# sourceMappingURL=style.css.map */
