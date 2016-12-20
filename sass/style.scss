@@ -60,6 +60,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .main-page {
   @include center-block;
   max-width: 1140px;
+  padding: 0 1.5em;
+}
+
+.inner {
+  padding: 2em 0;
 }
 
 /*--------------------------------------------------------------
@@ -72,6 +77,34 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 .header-area {
   background-color: $color4;
+}
+
+.site-header {
+  padding: 0;
+}
+
+.site-title {
+  color: $color1;
+  font-family: "grueber",sans-serif;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+.site-title a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover > a,
+  &.focus > a {
+    text-decoration: underline;
+  }
+}
+
+.site-description {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
