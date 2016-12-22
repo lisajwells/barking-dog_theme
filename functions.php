@@ -152,12 +152,6 @@ require get_template_directory() . '/inc/jetpack.php';
 // Remove edit link from posts
 add_filter( 'edit_post_link', '__return_false' );
 
-/* Change Excerpt length */
-function custom_excerpt_length( $length ) {
-	return 30;
-}
-add_filter( ‘excerpt_length’, ‘custom_excerpt_length’, 999 );
-
 // Register my custom skin for The Grid plugin (files in barking-dog/the-grid/masonry)
 add_filter('tg_register_item_skin', function($skins) {
 
@@ -177,3 +171,12 @@ add_filter('tg_register_item_skin', function($skins) {
     return $skins;
 
 });
+
+// Hide home page title
+function barking_dog_change_the_title( $title) {
+     if (is_front_page()) {
+          $title = '';
+      }
+      return $title;
+}
+add_filter( 'the_title', 'barking_dog_change_the_title', 10);
