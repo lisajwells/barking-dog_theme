@@ -148,3 +148,32 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// Remove edit link from posts
+add_filter( 'edit_post_link', '__return_false' );
+
+/* Change Excerpt length */
+function custom_excerpt_length( $length ) {
+	return 30;
+}
+add_filter( ‘excerpt_length’, ‘custom_excerpt_length’, 999 );
+
+// Register my custom skin for The Grid plugin (files in barking-dog/the-grid/masonry)
+add_filter('tg_register_item_skin', function($skins) {
+
+    // just push your skin slugs (file name) inside the registered skin array
+    $skins = array_merge($skins,
+        array(
+            'tg-barking' => array(
+                'filter'   => 'My Filter', // filter name used in slider skin preview
+                'name'     => 'BarkingCoded', // Skin name used in skin preview label
+                'col'      => 1, // col number in preview skin mode
+                'row'      => 1  // row number in preview skin mode
+            )
+        )
+    );
+
+    // return all skins + the new one we added (tg-barking)
+    return $skins;
+
+});

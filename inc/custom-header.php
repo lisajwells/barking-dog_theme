@@ -22,8 +22,8 @@
  */
 function barking_dog_custom_header_setup() {
 	add_theme_support( 'custom-logo', array(
-		'width'	=> 200,
-		'height' => 129,
+		'width'	=> 300,
+		'height' => 193,
 		'flex-width' => false,
 		'flex-height' => false,
 	) );

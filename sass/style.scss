@@ -75,7 +75,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.header-area {
+.header-area, .footer-area {
   background-color: $color4;
 }
 
@@ -151,3 +151,5 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+
