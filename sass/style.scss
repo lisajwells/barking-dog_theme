@@ -25,6 +25,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 # Structure
 # Elements
+# Header
 # Forms
 # Navigation
 	## Links
@@ -141,6 +142,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Content
 --------------------------------------------------------------*/
 @import "site/site";
+
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
+.home .entry-title {
+  display: none;
+}
 
 /*--------------------------------------------------------------
 # Infinite scroll

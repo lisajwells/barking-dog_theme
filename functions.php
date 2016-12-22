@@ -172,11 +172,3 @@ add_filter('tg_register_item_skin', function($skins) {
 
 });
 
-// Hide home page title
-function barking_dog_change_the_title( $title) {
-     if (is_front_page()) {
-          $title = '';
-      }
-      return $title;
-}
-add_filter( 'the_title', 'barking_dog_change_the_title', 10);
