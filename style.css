@@ -396,6 +396,8 @@ table {
     color: #6d5614; }
 
 .site-description {
+  font-family: "niveau-grotesk-small-caps",sans-serif;
+  font-weight: 700;
   margin: 0;
   padding: 0; }
 
