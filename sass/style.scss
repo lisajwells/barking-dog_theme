@@ -81,31 +81,41 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 .site-header {
-  padding: 0;
+  padding: 1em 0;
+}
+
+.site-logo {
+  float: left;
+}
+
+.site-branding {
+    text-align: left;
+    float: left;
+    margin-left: 2em;
 }
 
 .site-title {
   color: $color1;
-  font-family: "foco",sans-serif;
-  font-weight: 400;
+  font-family: 'matizregular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4em;
   margin: 0;
-  text-align: center;
 }
 
 .site-title a {
   color: inherit;
   text-decoration: none;
 
-  &:hover > a,
-  &.focus > a {
-    text-decoration: underline;
+  &:hover {
+      color: $color7;
   }
+
 }
 
 .site-description {
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 /*--------------------------------------------------------------
