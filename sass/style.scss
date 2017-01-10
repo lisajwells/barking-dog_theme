@@ -162,6 +162,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   display: none;
 }
 
+#bioMag + p {
+    text-align: center;
+}
+
+#bioDev p {
+  max-width: 66%;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
