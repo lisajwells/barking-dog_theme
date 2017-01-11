@@ -64,6 +64,9 @@ function barking_dog_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+    // Add support for quote post format
+    add_theme_support( 'post-formats', array( 'quote' ) );
 }
 endif;
 add_action( 'after_setup_theme', 'barking_dog_setup' );
@@ -163,6 +166,12 @@ add_filter('tg_register_item_skin', function($skins) {
                 'name'     => 'BarkingCoded', // Skin name used in skin preview label
                 'col'      => 1, // col number in preview skin mode
                 'row'      => 1  // row number in preview skin mode
+            ),
+            'tg-barking-testimonial' => array(
+                'filter'   => 'My Filter', // filter name used in slider skin preview
+                'name'     => 'BarkingTestimonial', // Skin name used in skin preview label
+                'col'      => 1, // col number in preview skin mode
+                'row'      => 1  // row number in preview skin mode
             )
         )
     );
@@ -171,4 +180,3 @@ add_filter('tg_register_item_skin', function($skins) {
     return $skins;
 
 });
-
