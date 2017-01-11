@@ -156,21 +156,55 @@ require get_template_directory() . '/inc/jetpack.php';
 add_filter( 'edit_post_link', '__return_false' );
 
 // Register my custom skin for The Grid plugin (files in barking-dog/the-grid/masonry)
-add_filter('tg_register_item_skin', function($skins) {
+// add_filter('tg_register_item_skin', function($skins) {
 
     // just push your skin slugs (file name) inside the registered skin array
-    $skins = array_merge($skins,
-        array(
-            'tg-barking' => array(
-                'filter'   => 'My Filter', // filter name used in slider skin preview
-                'name'     => 'BarkingCoded', // Skin name used in skin preview label
-                'col'      => 1, // col number in preview skin mode
-                'row'      => 1  // row number in preview skin mode
-            )
-        )
-    );
+    // $skins = array_merge($skins,
+    //     array(
+    //         'tg-barking' => array(
+    //             'filter'   => 'My Filter', // filter name used in slider skin preview
+    //             'name'     => 'BarkingCoded', // Skin name used in skin preview label
+    //             'col'      => 1, // col number in preview skin mode
+    //             'row'      => 1  // row number in preview skin mode
+    //         )
+    //     )
+    // );
 
     // return all skins + the new one we added (tg-barking)
+//     return $skins;
+
+// });
+
+// Register my custom skin for The Grid plugin (files in barking-dog/the-grid/masonry)
+add_filter('tg_add_item_skin', function($skins) {
+
+    $PATH = get_stylesheet_directory();
+
+    // register a skin and add it to the main skins array
+    $skins['tg-barking'] = array(
+        'type'   => 'masonry',
+        'filter' => 'barking-dog',
+        'slug'   => 'tg-barking',
+        'name'   => 'Barking',
+        'php'    => $PATH . '/the-grid/masonry/tg-barking/tg-barking.php',
+        'css'    => $PATH . '/the-grid/masonry/tg-barking/tg-barking.css',
+        'col'    => 1, // col number in preview skin mode
+        'row'    => 1  // row number in preview skin mode
+    );
+
+    // register a skin and add it to the main skins array
+    $skins['tg-barking-testimonial'] = array(
+        'type'   => 'masonry',
+        'filter' => 'barking-dog',
+        'slug'   => 'tg-barking-testimonial',
+        'name'   => 'BarkingTestimonial',
+        'php'    => $PATH . '/the-grid/masonry/tg-barking/tg-barking-testimonial.php',
+        'css'    => $PATH . '/the-grid/masonry/tg-barking/tg-barking-testimonial.css',
+        'col'    => 1, // col number in preview skin mode
+        'row'    => 1  // row number in preview skin mode
+    );
+
+    // return the skins array + the new one you added (in this example 2 new skins was added)
     return $skins;
 
 });
