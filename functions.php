@@ -166,12 +166,6 @@ add_filter('tg_register_item_skin', function($skins) {
                 'name'     => 'BarkingCoded', // Skin name used in skin preview label
                 'col'      => 1, // col number in preview skin mode
                 'row'      => 1  // row number in preview skin mode
-            ),
-            'tg-barking-testimonial' => array(
-                'filter'   => 'My Filter', // filter name used in slider skin preview
-                'name'     => 'BarkingTestimonial', // Skin name used in skin preview label
-                'col'      => 1, // col number in preview skin mode
-                'row'      => 1  // row number in preview skin mode
             )
         )
     );
