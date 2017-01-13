@@ -66,7 +66,7 @@ function barking_dog_setup() {
 	) ) );
 
     // Add support for quote post format
-    // add_theme_support( 'post-formats', array( 'quote' ) );
+    add_theme_support( 'post-formats', array( 'quote' ) );
 }
 endif;
 add_action( 'after_setup_theme', 'barking_dog_setup' );

@@ -227,6 +227,7 @@ th {
   src: url("fonts/matiz/matiz-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/matiz/matiz-webfont.woff2") format("woff2"), url("fonts/matiz/matiz-webfont.woff") format("woff"), url("fonts/matiz/matiz-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
 body,
 button,
 input,
@@ -437,6 +438,7 @@ input[type="submit"] {
 
 p.button {
   background: #d4ca62;
+  border-radius: 6px;
   font-size: .9em;
   padding: .4em .2em;
   text-transform: uppercase;
@@ -529,7 +531,8 @@ a {
       .main-navigation ul ul ul {
         left: -999em;
         top: 0; }
-      .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+      .main-navigation ul ul li:hover > ul,
+      .main-navigation ul ul li.focus > ul {
         left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
@@ -551,19 +554,21 @@ a {
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
     display: none; }
-
   .main-navigation ul {
     display: block; } }
+
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden; }
+
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%; }
+
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -770,5 +775,4 @@ object {
 
 .gallery-caption {
   display: block; }
-
 /*# sourceMappingURL=style.css.map */
