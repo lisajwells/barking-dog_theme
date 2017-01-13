@@ -718,10 +718,24 @@ a {
   text-align: center; }
 
 .contacts a {
-  background-image: url(./images/social-contacts-sprite.png);
+  background: url(./images/social-contacts-sprite.png) no-repeat;
+  background-size: 314px;
   display: inline-block;
-  height: 100px;
-  width: 100px; }
+  height: 70px;
+  width: 70px; }
+
+a.contact-linkedin {
+  background-position: -2px 0px; }
+
+a.contact-github {
+  background-position: -74px 0px; }
+
+a.contact-generalassembly {
+  background-position: -239px 0px; }
+
+a.contact-mail {
+  background-position: -151px 0px;
+  width: 90px; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
