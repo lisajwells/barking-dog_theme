@@ -199,7 +199,7 @@ add_filter('tg_add_item_skin', function($skins) {
         'slug'   => 'tg-barking-testimonial',
         'name'   => 'BarkingTestimonial',
         'php'    => $PATH . '/the-grid/masonry/tg-barking/tg-barking-testimonial.php',
-        'css'    => $PATH . '/the-grid/masonry/tg-barking/tg-barking-testimonial.css',
+        'css'    => $PATH . '/the-grid/masonry/tg-barking/tg-barking.css',
         'col'    => 1, // col number in preview skin mode
         'row'    => 1  // row number in preview skin mode
     );
