@@ -17,10 +17,11 @@
     <div class="footer-area full">
         <div class="main-page">
         	<footer id="colophon" class="site-footer inner" role="contentinfo">
-        		<div class="site-info">
-        			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'barking-dog' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'barking-dog' ), 'WordPress' ); ?></a>
-        			<span class="sep"> | </span>
-        			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'barking-dog' ), 'barking-dog', '<a href="http://barkingdogweb.com" rel="designer">Lisa Wells</a>' ); ?>
+        		<div class="contacts">
+                    <a class="contacts-link" href="<?php echo esc_url( __( 'https://www.linkedin.com/in/lisajwells', 'barking-dog' ) ); ?>"></a>
+                    <a class="contacts-link" href="<?php echo esc_url( __( 'https://www.linkedin.com/in/lisajwells', 'barking-dog' ) ); ?>"></a>
+                    <a class="contacts-link" href="<?php echo esc_url( __( 'https://www.linkedin.com/in/lisajwells', 'barking-dog' ) ); ?>"></a>
+        			<a class="contacts-link" href="<?php echo esc_url( __( 'https://www.linkedin.com/in/lisajwells', 'barking-dog' ) ); ?>"></a>
         		</div><!-- .site-info -->
         	</footer><!-- #colophon -->
         </div><!-- .main-page -->

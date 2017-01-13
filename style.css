@@ -34,6 +34,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Clearings
 # Widgets
 # Content
+  ## Front Page
+  ## Footer
 	## Posts and pages
 	## Comments
 # Infinite scroll
@@ -708,6 +710,18 @@ a {
 
 #bioDev p {
   max-width: 66%; }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.contacts {
+  text-align: center; }
+
+.contacts a {
+  background-image: url(./images/social-contacts-sprite.png);
+  display: inline-block;
+  height: 100px;
+  width: 100px; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
