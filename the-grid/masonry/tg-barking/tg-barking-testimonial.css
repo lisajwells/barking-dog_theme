@@ -1,0 +1,133 @@
+.tg-barking-testimonial a:not([class*="tg-element-"]),
+.tg-barking-testimonial a:not([class*="tg-element-"]):active,
+.tg-barking-testimonial a:not([class*="tg-element-"]):focus,
+.tg-barking-testimonial [class*="tg-element-"] *:not(del) {
+  margin: 0;
+  padding: 0;
+  color: #eae5b2 !important;
+  text-align: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  text-decoration: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+}
+.tg-barking-testimonial [class*="tg-element-"],
+.tg-barking-testimonial .tg-item-overlay,
+.tg-barking-testimonial .tg-center-outer,
+.tg-barking-testimonial .tg-center-inner > * {
+  vertical-align: middle;
+}
+.tg-barking-testimonial .tg-item-overlay {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 400ms ease !important;
+  -moz-transition: all 400ms ease !important;
+  -ms-transition: all 400ms ease !important;
+  transition: all 400ms ease !important;
+}
+.tg-barking-testimonial:not(.tg-force-play):not(.tg-is-playing) .tg-item-media-holder:hover .tg-item-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.tg-barking-testimonial .tg-item-content-holder[data-position="bottom"] {
+  position: relative;
+  min-height: 1px;
+  display: block;
+  padding: 22px 24px;
+}
+.tg-barking-testimonial div.tg-item-media-content {
+  text-align: center;
+}
+.tg-barking-testimonial .tg-element-1 {
+  position: relative;
+  font-size: 22px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  min-height: 40px;
+  margin: 10px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -webkit-transform: translate3d(100%,0%,0px);
+  -moz-transform: translate3d(100%,0%,0px);
+  -ms-transform: translate3d(100%,0%,0px);
+  transform: translate3d(100%,0%,0px);
+}
+.tg-barking-testimonial .tg-item-media-holder:hover .tg-element-1 {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+h2.tg-item-title.tg-element-3 {
+  color: rgba(17, 67, 103, 1) !important;
+}
+
+.tg-item-content-holder a.semiLink {
+  color: rgb(109, 86, 20) !important;
+}
+
+.tg-item-content-holder a.semiLink:hover {
+  text-decoration: underline;
+}
+
+.tg-barking-testimonial p {
+  color: #eae5b2 !important;
+}
+
+.tg-barking-testimonial .tg-element-3 {
+  color: #eae5b2;
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: right;
+  text-transform: uppercase;
+}
+.tg-barking-testimonial .tg-element-5 {
+  position: relative;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 400;
+  display: block;
+  margin: 0;
+  padding: 18px 0;
+}
+
+#grid-107 .tg-item-content-holder {
+  background-color: rgba(37, 63, 84, 1) !important;
+}
+
+#grid-107 .tg-item-content-holder h2,
+#grid-107 .tg-item-content-holder {
+  color: #eae5b2 !important;
+}
+
+#grid-107 .tg-item-content-holder h2 {
+  text-align: left;
+}
