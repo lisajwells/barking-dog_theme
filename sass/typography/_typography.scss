@@ -22,6 +22,10 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+p {
+    @include font-size(1.15);
+  }
+
 strong {
   color: $color1;
   font-weight: 400;

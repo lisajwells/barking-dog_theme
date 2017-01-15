@@ -53,7 +53,9 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  font-size: 48px;
+  font-size: 3rem; }
 
 article,
 aside,
@@ -242,6 +244,10 @@ textarea {
   font-size: 1.2rem;
   line-height: 1.5; }
 
+p {
+  font-size: 18.4px;
+  font-size: 1.15rem; }
+
 strong {
   color: #114367;
   font-weight: 400; }
@@ -301,9 +307,6 @@ big {
   margin-right: auto;
   max-width: 1140px;
   padding: 0 1.5em; }
-
-.inner {
-  padding: 2em 0; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -399,6 +402,7 @@ table {
     color: #6d5614; }
 
 .site-description {
+  color: #114367;
   font-family: "niveau-grotesk-small-caps",sans-serif;
   font-weight: 700;
   margin: 0;
@@ -708,8 +712,9 @@ a {
 #bioMag + p {
   text-align: center; }
 
-#bioDev p {
-  max-width: 66%; }
+@media (min-width: 50em) {
+  #bioDev p {
+    max-width: 66%; } }
 
 /*--------------------------------------------------------------
 # Footer
