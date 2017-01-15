@@ -53,9 +53,7 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  margin: 0;
-  font-size: 48px;
-  font-size: 3rem; }
+  margin: 0; }
 
 article,
 aside,
@@ -240,13 +238,17 @@ textarea {
   color: #253f54;
   font-family: "niveau-grotesk", sans-serif;
   font-weight: 300;
-  font-size: 19.2px;
-  font-size: 1.2rem;
-  line-height: 1.5; }
-
-p {
   font-size: 18.4px;
-  font-size: 1.15rem; }
+  font-size: 1.15rem;
+  line-height: 1.5; }
+  @media (min-width: 50em) {
+    body,
+    button,
+    input,
+    select,
+    textarea {
+      font-size: 19.2px;
+      font-size: 1.2rem; } }
 
 strong {
   color: #114367;
