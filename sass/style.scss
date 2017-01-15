@@ -84,16 +84,35 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .site-header {
   padding: 1em 0;
+
+  @include breakpoint(phablet) {
+    position: relative;
+  }
+
 }
 
 .site-logo {
-  float: left;
+
+  width: 14.6em;
+
+  @include breakpoint(phablet) {
+    float: left;
+  }
+
 }
 
 .site-branding {
     text-align: left;
     float: left;
     // margin-left: 2em;
+
+    @include breakpoint(phablet) {
+    text-align: right;
+    max-width: 13em;
+    position: absolute;
+    right: 0;
+    bottom: 1.5em;
+  }
 }
 
 .site-title {
