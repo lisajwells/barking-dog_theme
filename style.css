@@ -381,16 +381,16 @@ table {
 
 .site-branding {
   text-align: left;
-  float: left;
-  margin-left: 2em; }
+  float: left; }
 
 .site-title {
   color: #114367;
   font-family: 'matizregular', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 4em;
-  margin: 0; }
+  font-size: 3em;
+  line-height: .9;
+  margin: 0 0 .2em 0; }
 
 .site-title a {
   color: inherit;
@@ -718,24 +718,23 @@ a {
   text-align: center; }
 
 .contacts a {
-  background: url(./images/social-contacts-sprite.png) no-repeat;
-  background-size: 314px;
+  background: url(./images/social-sprite.png) no-repeat;
+  background-size: 50px;
   display: inline-block;
-  height: 70px;
-  width: 70px; }
+  height: 50px;
+  width: 50px; }
 
 a.contact-linkedin {
-  background-position: -2px 0px; }
+  background-position: 0 1px; }
 
 a.contact-github {
-  background-position: -74px 0px; }
+  background-position: 0 -55px; }
 
 a.contact-generalassembly {
-  background-position: -239px 0px; }
+  background-position: 0 -111px; }
 
 a.contact-mail {
-  background-position: -151px 0px;
-  width: 90px; }
+  background-position: 0 -166px; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
