@@ -725,6 +725,7 @@ a {
 # Footer
 --------------------------------------------------------------*/
 .contacts {
+  padding: 1em 0 .3em;
   text-align: center; }
 
 .contacts a {

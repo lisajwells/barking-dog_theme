@@ -113,6 +113,10 @@ h2.tg-item-title.tg-element-3 {
   margin-bottom: .5em !important;
 }
 
+.tg-barking-testimonial p:first-of-type {
+  margin-top: 0 !important;
+}
+
 .tg-barking p {
   margin-bottom: 1em !important;
 }
