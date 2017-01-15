@@ -323,9 +323,12 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: url("./images/sunburst_4_50.png") no-repeat fixed top right;
-  background-color: #d1dfe3;
-  /* Fallback for when there is no custom background color defined. */ }
+  background-color: #d1dfe3; }
+  @media (min-width: 50em) {
+    body {
+      background: url("./images/sunburst_4_50.png") no-repeat fixed top right;
+      background-color: #d1dfe3;
+      background-position-x: 140%; } }
 
 blockquote, q {
   quotes: "" ""; }

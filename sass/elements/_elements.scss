@@ -9,8 +9,14 @@ html {
 }
 
 body {
-  background: url("./images/sunburst_4_50.png") no-repeat fixed top right;
-	background-color: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  background-color: $color__background-body;
+
+    @include breakpoint(tablet) {
+    background: url("./images/sunburst_4_50.png") no-repeat fixed top right;
+    background-color: $color__background-body;
+    background-position-x: 140%;
+  }
+
 }
 
 blockquote, q {
