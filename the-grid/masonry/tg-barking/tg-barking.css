@@ -1,3 +1,16 @@
+div#grid-48 {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+
+    div#grid-48 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .tg-barking-testimonial a:not([class*="tg-element-"]),
 .tg-barking a:not([class*="tg-element-"]),
 .tg-barking-testimonial a:not([class*="tg-element-"]):active,
