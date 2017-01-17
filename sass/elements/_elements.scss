@@ -12,10 +12,16 @@ body {
   background-color: $color__background-body;
 
     @include breakpoint(tablet) {
-    background: url("./images/sunburst_4_50.png") no-repeat fixed top right;
-    background-color: $color__background-body;
-    background-position-x: 140%;
-  }
+      background: url("./images/sunburst_4_50.png") no-repeat fixed top right;
+      background-color: $color__background-body;
+      background-position-x: 140%;
+    }
+    @include breakpoint(laptop) {
+      background-position-x: 120%;
+    }
+    @include breakpoint(desktop) {
+      background-position-x: 100%;
+    }
 
 }
 

@@ -333,6 +333,12 @@ body {
       background: url("./images/sunburst_4_50.png") no-repeat fixed top right;
       background-color: #d1dfe3;
       background-position-x: 140%; } }
+  @media (min-width: 64em) {
+    body {
+      background-position-x: 120%; } }
+  @media (min-width: 70em) {
+    body {
+      background-position-x: 100%; } }
 
 blockquote, q {
   quotes: "" ""; }
