@@ -217,10 +217,12 @@ function insert_fb_in_head() {
     if ( !is_singular()) //if it is not a post or a page, ditch
         return;
         // echo '<meta property="fb:admins" content="YOUR USER ID"/>';
-        echo '<meta property="og:title" content="' . get_the_title() . '"/>';
+        echo '<meta property="og:title" content="Barking Dog Web"/>';
+        echo '<meta property="fb:app_id" content="1538943909468098" />';
         echo '<meta property="og:type" content="website"/>';
         echo '<meta property="og:url" content="' . get_permalink() . '"/>';
         echo '<meta property="og:site_name" content="Barking Dog Web"/>';
         echo '<meta property="og:image" content="https://barkingdogweb.com/wp-content/themes/barking-dog/images/barkingdog_og.png" />';
+        echo '<meta property="og:description" content="Lisa Wells, web developer (with an eye for design), a puzzle solver who loves nothing better than finding an elegant solution to a sticky problem." />';
 }
 add_action( 'wp_head', 'insert_fb_in_head', 5 );
