@@ -214,22 +214,13 @@ add_filter('language_attributes', 'add_opengraph_doctype');
 
 function insert_fb_in_head() {
     global $post;
-    if ( !is_singular()) //if it is not a post or a page
+    if ( !is_singular()) //if it is not a post or a page, ditch
         return;
-        echo '<meta property="fb:admins" content="YOUR USER ID"/>';
+        // echo '<meta property="fb:admins" content="YOUR USER ID"/>';
         echo '<meta property="og:title" content="' . get_the_title() . '"/>';
-        echo '<meta property="og:type" content="article"/>';
+        echo '<meta property="og:type" content="website"/>';
         echo '<meta property="og:url" content="' . get_permalink() . '"/>';
-        echo '<meta property="og:site_name" content="Your Site NAME Goes HERE"/>';
-    if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
-        $default_image="http://example.com/image.jpg"; //replace this with a default image on your server or an image in your media library
-        echo '<meta property="og:image" content="' . $default_image . '"/>';
-    }
-    else{
-        $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
-        echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
-    }
-    echo "
-";
+        echo '<meta property="og:site_name" content="Barking Dog Web"/>';
+        echo '<meta property="og:image" content="https://barkingdogweb.com/wp-content/themes/barking-dog/images/barkingdog_og.png" />';
 }
 add_action( 'wp_head', 'insert_fb_in_head', 5 );
